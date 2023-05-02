@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Sitio Principal
+        </h1>
+    </header>
+    <section>
+        <article>
+            <h2>Probando formularios</h2>
+            <form action="./results.html" method="get">
+                <h2>Registro</h2>
+                <input type="text" name="user" value="" placeholder="Ingrese su usuario" required>
+                <input type="email" name="mail" value="" placeholder="Ingrese su email" required>
+                <input type="password" name="pass" value="" placeholder="Ingrese su contraseña" required>
+                <input type="number" name="age" value="" placeholder="Ingrese su edad">
+
+            <h2>Radio button</h2>
+            <h3>Género</h3>
+            <input type="radio" name="genero" value="fem"> <label>Femenino</label>
+            <input type="radio" name="genero" value="masc"> <label>Masculino</label>
+
+            <h2>CheckBox</h2>
+            <h3>Hobbies</h3>
+            <input type="checkbox" name="hobbies" value="tenis" checked> <label>Tenis</label>
+            <input type="checkbox" name="hobbies" value="hockey"> <label>Hockey</label>
+            <input type="checkbox" name="hobbies" value="futbol"> <label>Futbol</label>
+            <input type="checkbox" name="hobbies" value="otro"> <label>Otro</label>
+            <input type="text" name="text" value="" placeholder="Ingrese su hobby">
+
+            <h2>Select</h2>
+            <h3>Nacionalidad</h3>
+            <select name="nacionalidad" id="">
+                <option value="">Elija una opción</option>
+                <option value="arg" selected>Argentina</option>
+                <option value="bra">Brasil</option>
+                <option value="ur">Uruguay</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <h2>Text Area</h2>
+            <h3>Comentarios</h3>
+            <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+
+            <div>
+                <button type="submit">
+                    Mis datos
+                </button>
+            </div>
+            </form>         
+        </article>
+    </section>
+    
+</body>
+</html>

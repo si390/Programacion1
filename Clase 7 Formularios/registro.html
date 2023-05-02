@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Clase 5 FlexBox/Practica kitchen/css/estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h5> 
+            <a href="./registro.html">Register</a>
+            <a href="./login.html">Login</a> 
+        </h5>
+        <img class="logo" src="./kitcheningResponsiveYForms_Base 2/img/logo.jpg" alt="logo">
+        <nav class="inicio">
+            <ul class="principalba">
+                <li><a href="./index copy.html">HOME</a></li>
+                <li><a href="">QUIENES</a></li>
+                <li><a href="">SERVICIOS</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">SUCURSALES</a></li>
+                <li><a href="">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="registrate">REGISTRATE</h1>
+        <section class="contenedorpadre">
+            <form class="formulariora" action="./registro.html" method="get">
+                <h3>Nombre</h3>
+                <input class="in" type="text" name="name" value="" placeholder="Ingrese su nombre" required>
+                <h3>Email</h3>
+                <input class="in" type="email" name="mail" value="" placeholder="Ingrese su email" required>
+                <h3>Contraseña</h3>
+                <input class="in" type="password" name="pass" value="" placeholder="Ingrese su contraseña" required>
+                <h3>Edad</h3>
+                <input class="in" type="number" name="age" value="" placeholder="Ingrese su edad">
+
+                <h3><strong>País de nacimiento</strong></h3>
+                <select name="nacionalidad" id="">
+                    <option value="">Elija una opción</option>
+                    <option value="arg" selected>Argentina</option>
+                    <option value="bra">Brasil</option>
+                    <option value="ur">Uruguay</option>
+                    <option value="otro">Otro</option>
+                </select>
+            
+                <h3> <strong>Género</strong></h3>
+                <input type="radio" name="genero" value="fem"> <label>Femenino</label>
+                <input type="radio" name="genero" value="masc"> <label>Masculino</label>
+                <input type="radio" name="genero" value="nop"> <label>Prefiero no decirlo</label>
+
+                <h3> <strong>Hobbies</strong></h3>
+                <input type="checkbox" name="hobbies" value="tenis" checked> <label>Tenis</label>
+                <input type="checkbox" name="hobbies" value="hockey"> <label>Hockey</label>
+                <input type="checkbox" name="hobbies" value="futbol"> <label>Futbol</label>
+                <input type="checkbox" name="hobbies" value="rugby"> <label>Rugby</label>
+                <input type="checkbox" name="hobbies" value="arco"> <label>Arqueria</label>
+                <input type="checkbox" name="hobbies" value="basquet"> <label>Basquet</label>
+                <input type="checkbox" name="hobbies" value="otro"> <label>Otro</label>
+                <input type="text" name="text" value="" placeholder="Ingrese su hobby">
+
+                <h3><strong>Dejanos tus comentarios</strong></h3>
+                <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+                <div>
+                    <input type="checkbox" name="terms" value="accept" required> <label>Acepto los términos y condiciones</label>
+                </div>
+                
+                <div>
+                    <button type="submit">
+                        Registrarme
+                    </button>
+        
+                    <button type="submit">
+                        Cancelar
+                    </button>
+                </div>
+            
+            </form>
+        </main>
+    </section>
+</body>
+</html>
