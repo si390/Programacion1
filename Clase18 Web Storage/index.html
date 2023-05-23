@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage</title>
+</head>
+<body>
+    <main>
+        <h1>WebStorage</h1>
+        <p>Sirve para almacenar información en el navegador, del lado del cliente </p>
+        <h4>Dos mecanismos:</h4>
+        <ul>
+            <li><h3>localStorage</h3></li>
+            <li><h3>sessionStorage</h3></li>
+        </ul>
+        <section>
+            <article>
+                <h2>Local Storage</h2>
+                <p>Es un objeto literal, podemos setear propiedades y valores. Leer y escribir datos, almacena strings, se guarda por dominio y navegador</p>
+                <h4>Métodos</h4>
+                <h3>setItem() agrega propiedad y sus valores en el objeto literal localStorage</h3>
+                <p>Recibe dos parámetros: nombre de la propiedad y valor</p>
+                <h3>getItem() obtiene los valores de la propiedad guardada en localStorage</h3>
+                <p>Recibe un parámetro: el nombre de la propiedad</p>
+                <h3>removeItem() remueve la propiedad guardada dentro del localStorage</h3>
+                <p>Recibe un parámetro: propiedad que queremos eliminar</p>
+                <h3>clear()</h3>
+                <p>Borra todo el contenido local</p>
+            </article>
+            <article>
+                <h2>Session Storage</h2>
+                <p>Es un objeto literal, podemos leer y escribir datos, almacena strings, información única, se guarda por dominio y navegador</p>
+            </article>
+        </section>
+    </main>
+    
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
