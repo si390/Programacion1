@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueryStrings</title>
+</head>
+<body>
+    <h1>QueryStrings</h1>
+    <section>
+        <article>
+            <p>Las peticiones por get permiten el uso de query strings</p>
+            <h3>Definición: Es una cadena de texto que viaja en la url al momento de hacer una petición por get al servidor</h3>
+            <p>Se escribe al final de la ruta comenzando con el signo <strong>"?"</strong> y está formada por pares <strong>"clave=valor"</strong> y deben estar separados por el caracter <strong>"&"</strong> si hay un par más de clave=valor</p>
+        </article>
+    </section>
+    <h3>?search_query=digitalhouse</h3>
+    <ul>
+        <li>? : inicio de la querystring</li>
+        <li>clave : query</li>
+        <li>= : operador de asignación</li>
+        <li>valor : digitalhouse</li>
+    </ul>
+    <h3>Enviando datos por querystrings</h3>
+    <article>
+        <h4>Hipervinculos</h4>
+        <p>Con la etiqueta "a", tendremos que completar el href con los datos: <strong>?id=35</strong></p>
+        <h4>Formulario</h4>
+        <p>Con método GET</p>
+        <p>La clave será el atributo "name" de cada input </p>
+    </article>
+    <h2>Obteniendo Objetos</h2>
+    <section>
+        <article>
+            <h3>OBJET location</h3>
+            <p>Es un objeto literal con algunas propiedades que nos permiten obtener información de la url</p>
+            <h4>location.search</h4>
+            <p>Retorna la información en formato de cadena de texto, usando JavaScript podemos convertir la cadena de texto en un <strong>objeto literal</strong> con atributos y métodos para manipular los datos eficientemente</p>
+            <h4>Objeto: URLSearchParams</h4>
+            <p>Define métodos útiles para trabajar con los parámetros de una URL</p>
+        </article>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
