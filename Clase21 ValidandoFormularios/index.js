@@ -30,3 +30,14 @@ let campoBuscar = document.querySelector(".campoBuscar");
 if(campoBuscar.value==""){
     //Informamos al usuario en el HTML
 }
+
+//submit y value
+formulario.addEventListener('submit', function(event){
+    event.preventDefault(); //Detenemos el comportamiento default del formulario que es enviarse
+    if(campoBuscar.value==""){ //Chequeamos el contenido
+        //Informamos al usuario en el HTML
+    } else{
+        this.submit() //Si no hay errores entonces enviamos el formulario con el método submit() 
+    }
+    
+});
