@@ -24,11 +24,15 @@ fetch(url)
 
 //Validar FORMULARIOS
 let formulario = document.querySelector("form");
-let campoBuscar = document.querySelector(".campoBuscar");
+let campoBuscar = document.querySelector("input");
+
 formulario.addEventListener('submit', function(event){
     event.preventDefault();
-    if(campoBuscar.value==""){ 
-        
+
+    if(campoBuscar.value===" "){ 
+        alert("El campo es obligatorio")
+    } else if(campoBuscar.value.length < 4){
+        alert("Debes escribir como mínimo 3 caracteres")
     } else{
         this.submit()
     }

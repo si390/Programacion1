@@ -8,7 +8,8 @@ fetch(url)
 })
 .then(function(data) {
     console.log(data);
-    let seccion = document.querySelector(".characterList");
+    
+let seccion = document.querySelector(".characterList");
     let arraycharacters = data.results
     let characters = ""
 
@@ -21,7 +22,6 @@ fetch(url)
 
     }
         seccion.innerHTML = characters;
-
 })
 .catch(function(error) {
     console.log("Error: " + error);
