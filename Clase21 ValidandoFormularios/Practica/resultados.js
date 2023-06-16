@@ -17,7 +17,7 @@ fetch(endpointsearch)
 
     for(let i = 0; i < arraygifs.length; i++){
         gifs +=         `<article>
-                            <img src=${arraygifs[i].images.original} alt='' />
+                            <img src=${arraygifs[i].bitly_gif_url} alt='' />
                             <p>Name: ${arraygifs[i].title}</p>
                             <p>Url: ${arraygifs[i].url}</p>
                         </article>`
